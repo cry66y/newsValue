@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NearestWord</name>
+    </assembly>
+    <members>
+        <member name="M:NearestWord.NearestWordClass.ApproximateWord(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Int32)">
+            <summary>
+            Checks distance between a string and a list of synonyms
+            </summary>
+            <param name="typedWord">Text to be treated and compared</param>
+            <param name="synonyms">List of synonyms to be compared</param>
+            <param name="regexPattern">Stopwords that will be removed in Regex</param>
+            <param name="maxChanges">Maximum accepted changes</param>
+            <returns>boolean and which treated string exists in the synonym list</returns>
+        </member>
+        <member name="M:NearestWord.NearestWordClass.ReplaceRegex(System.String,System.String)">
+            <summary>
+            Remove stop words passed as parameter
+            </summary>
+            <param name="typedWord">Text to be treated and compared</param>
+            <param name="regexPattern">Stopwords that will be removed in Regex</param>
+            <returns>Return string without stop words</returns>
+        </member>
+        <member name="M:NearestWord.NearestWordClass.CreateRegexPattern(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Treated string for regex pattern
+            </summary>
+            <param name="regexPattern">Stopwords that will be removed in Regex</param>
+            <returns>Return treated string for regex pattern</returns>
+        </member>
+        <member name="M:NearestWord.NearestWordClass.RemoveSpecialCharacters(System.String)">
+            <summary>
+            Remove special characters
+            </summary>
+            <param name="typedWord">Text to be treated</param>
+            <returns>String without special characters</returns>
+        </member>
+        <member name="M:NearestWord.NearestWordClass.RemoveWhiteSpaces(System.String)">
+            <summary>
+            Remove whitespaces
+            </summary>
+            <param name="typedWord">Text to be treated</param>
+            <returns>String without whitespaces</returns>
+        </member>
+        <member name="M:NearestWord.NearestWordClass.LevenshteinDistance(System.String,System.Collections.Generic.IEnumerable{System.String},System.Int32)">
+             <summary>
+             Checks whether the number of changes between the word entered and the synonym list
+            is less than or equal to the maximum of changes passed as parameter
+             </summary>
+             <param name="typedWord">Word that will be compared with synonym</param>
+             <param name="synonyms">List of synonyms to be compared</param>
+             <param name="maxChanges">Maximum accepted changes</param>
+             <returns>returns string that is equivalent to the list of synonyms and meets the maximum of changes</returns>
+        </member>
+    </members>
+</doc>
