@@ -497,14 +497,7 @@ namespace newsValue
 
         }
 
-        private static void findSysnonym(string[] keywords)
-        {
-            List<string> sysWord = new List<string>();
-            foreach(string word in keywords)
-            {
-                
-            }
-        }
+        
         private double encodeKeyWord(string[] keywords, string[] keyword2)
         {
             List<int> matchValue = new List<int>();
